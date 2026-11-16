@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #090a0d;
+  --sf: #12141a;
+  --tx: #e8e3d9;
+  --tx2: #969188;
+  --ac: #c8a464;
+  --acb: #2b2216;
+  --ln: #343842;
+  --bgi: none;
+  --fit: cover;
+  --blur: 0px;
+  --sc: 1;
+  --dim: 0.45;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  background-image: var(--bgi);
+  background-attachment: fixed;
+  color: var(--tx);
+  font-family: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior-y: contain;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: "Cinzel", Georgia, "Times New Roman", serif;
+  letter-spacing: 0.015em;
+  text-wrap: balance;
+}
+
+.font-mono-num {
+  font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--ac);
+  outline-offset: 2px;
+}
+
+/* Storm-lit dark fantasy ambient atmosphere */
+html[data-th="dark"] body {
+  background-image:
+    radial-gradient(70% 45% at 50% -10%, rgba(56, 68, 92, 0.34), transparent 72%),
+    radial-gradient(45% 35% at 12% 92%, rgba(122, 86, 40, 0.14), transparent 70%),
+    radial-gradient(50% 40% at 88% 85%, rgba(44, 52, 68, 0.22), transparent 70%),
+    linear-gradient(180deg, #0b0d12 0%, #07080b 100%);
+  background-attachment: fixed;
+}
+
+/* Animations */
+@keyframes kenburns {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1) translate(-1.5%, -1%);
+  }
+}
+
+.animate-kenburns {
+  animation: kenburns 6s ease-out forwards;
+}
+
+@keyframes fade-in-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-photo-in {
+  animation: fade-in-scale 0.28s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Hide scrollbars on horizontal tool strips */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .animate-kenburns,
+  .animate-photo-in {
+    animation: none !important;
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Bill World",
+  "description": "High-resolution photo opener and profile gallery with smart image compression, smooth zoom and pan inspection, AI search, and custom themes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

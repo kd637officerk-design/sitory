@@ -1,0 +1,236 @@
+import type { ThemeConfig } from '../types/gallery';
+
+export const THEMES: Record<string, ThemeConfig> = {
+  dark: {
+    n: 'Dark Fantasy',
+    e: '🌧️',
+    logo: '🗡️',
+    fx: 'rain',
+    bgi: 'radial-gradient(ellipse at 50% -10%, rgba(56, 68, 92, 0.34), transparent 68%), linear-gradient(180deg, #0b0d12 0%, #07080b 100%)',
+    v: {
+      bg: '#090a0d',
+      sf: '#12141a',
+      tx: '#e8e3d9',
+      tx2: '#969188',
+      ac: '#c8a464',
+      acb: '#2b2216',
+      ln: '#343842',
+    },
+  },
+  light: {
+    n: 'Light',
+    e: '☀️',
+    logo: '☀️',
+    v: {
+      bg: '#ffffff',
+      sf: '#f0f4f9',
+      tx: '#1f1f1f',
+      tx2: '#5f6368',
+      ac: '#0b57d0',
+      acb: '#d3e3fd',
+      ln: '#c4c7c5',
+    },
+  },
+  sea: {
+    n: 'Sea',
+    e: '🌊',
+    logo: '🌊',
+    fx: 'sea',
+    bgi: 'linear-gradient(180deg,#0a4a6b,#06324a 55%,#041f30)',
+    v: {
+      bg: '#062a3d',
+      sf: '#0c3d57',
+      tx: '#e6fbff',
+      tx2: '#8fc9d8',
+      ac: '#4fd1e8',
+      acb: '#12607d',
+      ln: '#2b7a96',
+    },
+  },
+  night: {
+    n: 'Night',
+    e: '🌌',
+    logo: '🌌',
+    fx: 'stars',
+    bgi: 'linear-gradient(180deg,#0b1026,#1a1b45 70%,#2a1f4d)',
+    v: {
+      bg: '#0b1026',
+      sf: '#181d3d',
+      tx: '#e8e9ff',
+      tx2: '#9a9fd1',
+      ac: '#a9b4ff',
+      acb: '#2c3270',
+      ln: '#3d4486',
+    },
+  },
+  batman: {
+    n: 'Batman 2022',
+    e: '🦇',
+    logo: '🦇',
+    fx: 'rainred',
+    bgi: 'radial-gradient(ellipse at 50% -10%,#3a0a0e,#0a0a0b 62%)',
+    v: {
+      bg: '#0a0a0b',
+      sf: '#17171a',
+      tx: '#e6e6e6',
+      tx2: '#8d8d92',
+      ac: '#e03a3e',
+      acb: '#3a1214',
+      ln: '#3a3a40',
+    },
+  },
+  rain: {
+    n: 'Rain',
+    e: '🌧️',
+    logo: '🌧️',
+    fx: 'rain',
+    bgi: 'linear-gradient(180deg,#2a3744,#161d25)',
+    v: {
+      bg: '#1c2630',
+      sf: '#26323e',
+      tx: '#e3ecf3',
+      tx2: '#94a8b8',
+      ac: '#7fb7e6',
+      acb: '#2f4559',
+      ln: '#465a6b',
+    },
+  },
+  hallo: {
+    n: 'Halloween',
+    e: '🎃',
+    logo: '🎃',
+    fx: 'hallo',
+    bgi: 'radial-gradient(circle at 80% 8%,#5a2d00,#2a0f3a 38%,#120818 78%)',
+    v: {
+      bg: '#140a1c',
+      sf: '#241230',
+      tx: '#fbe9d0',
+      tx2: '#c49a73',
+      ac: '#ff8a1f',
+      acb: '#4a2406',
+      ln: '#5a3a2a',
+    },
+  },
+  blade: {
+    n: 'Blade Runner',
+    e: '🌆',
+    logo: '🌆',
+    fx: 'rainred',
+    bgi: 'radial-gradient(ellipse at 70% 0%,#8a351c 0%,#34202b 38%,#090b18 78%)',
+    v: {
+      bg: '#100e18',
+      sf: '#211b26',
+      tx: '#ffe3c2',
+      tx2: '#c18b72',
+      ac: '#ff783d',
+      acb: '#512b32',
+      ln: '#74434a',
+    },
+  },
+  cyber: {
+    n: 'Cyberpunk',
+    e: '🦾',
+    logo: '🦾',
+    fx: 'stars',
+    bgi: 'radial-gradient(circle at 15% 10%,#522080,#10102c 48%,#061b29)',
+    v: {
+      bg: '#0b1022',
+      sf: '#191b37',
+      tx: '#f4eaff',
+      tx2: '#b6a0d8',
+      ac: '#ff4fd8',
+      acb: '#47205b',
+      ln: '#67417d',
+    },
+  },
+  medieval: {
+    n: 'Medieval',
+    e: '🏰',
+    logo: '🏰',
+    bgi: 'linear-gradient(145deg,#30251a,#17140f 65%,#342817)',
+    v: {
+      bg: '#19150f',
+      sf: '#30271b',
+      tx: '#f4e7c9',
+      tx2: '#bca77e',
+      ac: '#d5aa55',
+      acb: '#554323',
+      ln: '#76603b',
+    },
+  },
+  marvel: {
+    n: 'Marvel',
+    e: '🦸',
+    logo: '🛡️',
+    bgi: 'linear-gradient(145deg,#310b13,#101426 65%,#29121b)',
+    v: {
+      bg: '#111522',
+      sf: '#22283a',
+      tx: '#fff1e8',
+      tx2: '#c2b5bd',
+      ac: '#ed2939',
+      acb: '#54202c',
+      ln: '#713440',
+    },
+  },
+  christmas: {
+    n: 'Christmas',
+    e: '🎄',
+    logo: '🎄',
+    fx: 'stars',
+    bgi: 'radial-gradient(circle at 50% 0%,#174c3c,#10251f 55%,#0b1513)',
+    v: {
+      bg: '#0c1b17',
+      sf: '#17352b',
+      tx: '#f2f8e9',
+      tx2: '#a9c5ae',
+      ac: '#e5bd59',
+      acb: '#28513d',
+      ln: '#456d55',
+    },
+  },
+  future: {
+    n: 'Futuristic',
+    e: '🚀',
+    logo: '🚀',
+    fx: 'stars',
+    bgi: 'radial-gradient(ellipse at 50% 0%,#263b58,#101827 60%,#080d16)',
+    v: {
+      bg: '#0b1320',
+      sf: '#172538',
+      tx: '#edf7ff',
+      tx2: '#9eb5c9',
+      ac: '#65e0ff',
+      acb: '#21465b',
+      ln: '#42677e',
+    },
+  },
+  gif: {
+    n: 'GIF / Custom wallpaper',
+    e: '🎞️',
+    logo: '🎞️',
+    v: {
+      bg: '#0b0b0c',
+      sf: 'rgba(18,18,22,.72)',
+      tx: '#f4f4f5',
+      tx2: '#c4c4cc',
+      ac: '#8ab4f8',
+      acb: 'rgba(60,70,100,.78)',
+      ln: 'rgba(255,255,255,.28)',
+    },
+  },
+};
+
+export function applyThemeVars(themeKey: string, diyTheme: ThemeConfig | null): ThemeConfig {
+  const activeKey = themeKey === 'diy' && diyTheme ? 'diy' : THEMES[themeKey] ? themeKey : 'dark';
+  const cfg = activeKey === 'diy' && diyTheme ? diyTheme : THEMES[activeKey];
+  const root = document.documentElement;
+  root.dataset.th = activeKey;
+  root.dataset.theme = activeKey === 'light' ? 'light' : 'dark';
+  for (const [k, val] of Object.entries(cfg.v)) {
+    root.style.setProperty(`--${k}`, val);
+  }
+  root.style.setProperty('--bgi', cfg.bgi || 'none');
+  root.style.colorScheme = activeKey === 'light' ? 'light' : 'dark';
+  return cfg;
+}

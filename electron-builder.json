@@ -1,0 +1,51 @@
+{
+  "appId": "com.symphony8th.windows",
+  "productName": "SYMPHONY 8TH",
+  "copyright": "Copyright © 2026 SYMPHONY 8TH",
+  "directories": {
+    "output": "release",
+    "buildResources": "public"
+  },
+  "files": [
+    "dist/**/*",
+    "electron/**/*",
+    "package.json",
+    "!**/*.zip"
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "nsis",
+        "arch": ["x64"]
+      },
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "public/app-icon.ico"
+  },
+  "nsis": {
+    "artifactName": "SYMPHONY-8TH-${version}-Windows-Setup.${ext}",
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "SYMPHONY 8TH",
+    "installerIcon": "public/app-icon.ico",
+    "uninstallerIcon": "public/app-icon.ico",
+    "installerHeaderIcon": "public/app-icon.ico"
+  },
+  "portable": {
+    "artifactName": "SYMPHONY-8TH-${version}-Windows-Portable.${ext}"
+  },
+  "fileAssociations": [
+    {
+      "ext": ["jpg", "jpeg", "png", "webp", "gif", "avif", "bmp", "heic", "heif", "tif", "tiff"],
+      "name": "Image File",
+      "description": "Open with SYMPHONY 8TH",
+      "icon": "public/app-icon.ico",
+      "role": "Viewer"
+    }
+  ]
+}
